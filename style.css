@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+html
+{
+  background-color:#403F4C;
+  font-family: 'Abril Fatface', cursive;
+  color:white;
+  margin:auto;
+}
+.radial
+{
+  transform: rotate(-90deg);
+}
+svg
+{ 
+  position:absolute;
+  transform:translate(-50%,-50%);
+  left:42%;
+  top:32%;
+}
+#main
+{
+  stroke-linecap:round;
+}
+.progress
+{ 
+  animation-name:do;
+  animation-play-state:paused;
+  animation-duration:1500s;
+  animation-timing-function: linear;
+}
+
+@keyframes do {
+    from {
+        stroke-dashoffset: 703.716;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+.head
+{
+  color:#4CD945;
+  font-size:50px;
+  font-weight:600;
+  text-align:center;
+}
+.desc
+{
+    width:800px;
+    padding:25px;
+    display:table;
+    margin:auto;
+    position:relative;
+    text-align:center;
+    font-size:20px;
+}
+.left
+{
+  width:200px;
+  float:left;
+}
+.right
+{
+  width:200px;
+  float:right;
+}
+.break,.session
+{
+  font-size:30px;
+  user-select:none;
+}
+.operator1,.operator2,.operator3,.operator4
+{
+  padding:10px;
+  font-size:120%;
+  cursor:pointer;
+  user-select:none;
+}
+.timer
+{
+  color:white;
+  position:absolute;
+  transform:translate(-50%,-50%);
+  left:50%;
+  top:50%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:300%;
+  font-weight:600;
+}
+.play
+{
+  font-size:300%;
+  position:absolute;
+  transform:translate(-50%,-50%);
+  left:50%;
+  top:80%;
+}
+.icon
+{
+  padding:50px;
+  user-select:none;
+  cursor:pointer;
+}
+.label
+{
+  font-size:40px;
+  font-weight:100;
+}
+.content
+{
+  text-align:center;
+  position:relative;
+  margin-top:400px;
+}

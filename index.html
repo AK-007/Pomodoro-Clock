@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+  <h1 class="head">Pomodoro Clock</h1>
+<div class="desc">
+  <div class="left">
+   <div class="name">BREAK LENGTH</div>
+   <span class="operator1 fa fa-minus-square"></span>
+   <span class="break">5</span>
+   <span class="operator2 fa fa-plus-square"></span>
+  </div>
+  <div class="right">
+   <div class="name">SESSION LENGTH</div>
+   <span class="operator3 fa fa-minus-square"></span>
+   <span class="session">25</span>
+   <span class="operator4 fa fa-plus-square"></span>
+  </div>
+</div>
+<div class="timer">
+        <div class="label">Session</div>
+        <span class="minutes">25</span>
+        <span class="colon">:</span>
+        <span class="seconds">00</span>
+</div>
+<svg class="radial" width="240" height="240" viewBox="0 0 240 240">
+  <circle cx="120" cy="120" r="112" fill="none" stroke="#23232A" stroke-width="12"></circle>
+    <circle  id="main" class="progress" cx="120" cy="120" r="112" fill="none" stroke="#4FEDFF" stroke-width="12"></circle>
+</svg>
+<div class="play"><span class="icon fa fa-play-circle"></span><span class="icon fa fa-pause-circle"></span><span class="icon fa fa-repeat"></span></div>
+<div class="content">Made By Ayush</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script  src="index.js"></script>
+
+</body>
+</html>
